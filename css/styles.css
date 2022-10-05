@@ -86,6 +86,11 @@ h1, h2, h3, h4, h5, h6, .title {
   color: #0268ad;
 }
 
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
 *:focus {
   outline: none;
 }
@@ -100,6 +105,10 @@ h1, h2, h3, h4, h5, h6, .title {
 
 .shadow {
   box-shadow: 4px 4px 30px -15px #029395;
+}
+
+.mg-section {
+  margin-top: 50px;
 }
 
 .btn {
@@ -183,6 +192,42 @@ h1, h2, h3, h4, h5, h6, .title {
 }
 #hero .splide__slide .btn-wrapper .btn {
   margin: 0 auto;
+  display: table;
+}
+
+#solutions h2 + p {
+  text-align: center;
+}
+#solutions .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+#solutions .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#solutions .cards .card img {
+  width: 100%;
+}
+#solutions .cards .card h3, #solutions .cards .card p {
+  width: 80%;
+  margin: 0 auto;
+}
+#solutions .cards .card h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #029395;
+}
+#solutions .cards .card h3 span {
+  display: block;
+}
+#solutions .cards .card .btn {
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
   display: table;
 }
 
