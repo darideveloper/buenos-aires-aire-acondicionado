@@ -121,15 +121,15 @@ h1, h2, h3, h4, h5, h6, .title {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0268ad;
+  background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #029395;
+  background: #0268ad;
   margin-top: -5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #666262;
+  background: rgba(2, 104, 173, 0.8);
 }
 
 #hero .progress {
