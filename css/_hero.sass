@@ -1,0 +1,59 @@
+#hero
+
+    // SCustomize progress bar
+    .progress
+        background: $color-d
+
+
+        .progress-bar
+            background: $color-a
+            height: 2px
+            transition: width 400ms ease
+            height: 10px
+
+    // Hide splite dots
+    .splide__pagination.splide__pagination--ltr
+        display: none
+
+    .splide__slide
+        height: 50vw
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+
+        .title
+            font-size: 5vw
+            padding: 2%
+            text-align: center
+            background-color: rgba($color-b, 0.6)
+            color: $color-d
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+
+            span
+                display: inline-block
+
+        .logo
+            width: 200px
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            margin-left: 50px
+
+            img
+                width: 180px
+
+        .btn-wrapper
+            position: absolute
+            bottom: 100px
+            left: 0
+            width: 100%
+
+            .btn
+                margin: 0 auto
+                display: table
+
+    // @media screen and (max-width: $regular-width-media-query)

@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Spoof";
+  src: url("../fonts/Spoof-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Spoof";
+  src: url("../fonts/Spoof-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bold;
+}
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Spoof", sans-serif;
+}
+
+.wrapper-img {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-img img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-size: 18px;
+}
+p.small {
+  font-size: 16px;
+}
+
+.hide {
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: #029395;
+}
+
+.regular-width {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1300px) {
+  .regular-width {
+    padding: 0 5%;
+    width: 90%;
+  }
+}
+
+.full-width {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: "PTSans", cursive;
+  color: #0268ad;
+}
+
+*:focus {
+  outline: none;
+}
+
+.paralax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.shadow {
+  box-shadow: 4px 4px 30px -15px #029395;
+}
+
+.btn {
+  display: inline-block;
+  transition-duration: 0.3s;
+}
+.btn.cta {
+  padding: 15px 40px;
+  background-color: #029395;
+  color: #ffffff;
+  border-radius: 100px;
+}
+.btn.cta:hover {
+  background-color: rgba(2, 147, 149, 0.8);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0268ad;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #029395;
+  margin-top: -5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666262;
+}
+
+#hero .progress {
+  background: #ffffff;
+}
+#hero .progress .progress-bar {
+  background: #029395;
+  height: 2px;
+  transition: width 400ms ease;
+  height: 10px;
+}
+#hero .splide__pagination.splide__pagination--ltr {
+  display: none;
+}
+#hero .splide__slide {
+  height: 50vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#hero .splide__slide .title {
+  font-size: 5vw;
+  padding: 2%;
+  text-align: center;
+  background-color: rgba(2, 104, 173, 0.6);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#hero .splide__slide .title span {
+  display: inline-block;
+}
+#hero .splide__slide .logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 50px;
+}
+#hero .splide__slide .logo img {
+  width: 180px;
+}
+#hero .splide__slide .btn-wrapper {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+}
+#hero .splide__slide .btn-wrapper .btn {
+  margin: 0 auto;
+  display: table;
+}
+
+/*# sourceMappingURL=styles.css.map */
