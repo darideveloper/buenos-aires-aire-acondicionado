@@ -267,9 +267,8 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
-#experience .cards-imgs-wrapper .cards-imgs .card-bg-1 {
-  grid-row-start: 1;
-  grid-row-end: 3;
+#experience .cards-imgs-wrapper .cards-imgs.oficinas-edificios {
+  grid-template-columns: repeat(4, 1fr);
 }
 #experience .cards-imgs-wrapper .cards-imgs .card {
   display: flex;
@@ -311,6 +310,22 @@ h2 {
 #experience .cards-imgs-wrapper .cards-imgs .card .content p {
   margin: 0;
   color: #ffffff;
+}
+#experience .cards-imgs-wrapper .cards-imgs .card-bg-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#experience .cards-imgs-wrapper .cards-imgs .card-bg-6 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#experience .cards-imgs-wrapper .cards-imgs .card-bg-17 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#experience .cards-imgs-wrapper .cards-imgs .card-bg-19 {
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
 
 /*# sourceMappingURL=styles.css.map */

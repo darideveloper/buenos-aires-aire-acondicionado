@@ -9,7 +9,7 @@ export function set_cards_bg_imgs () {
 
         // Get background image
         const image_name = card.classList[1]
-        const image_path = `url("../imgs/${image_name}.jpg")`
+        const image_path = `url("./imgs/${image_name}.jpg")`
 
         // Set background
         bg.style.backgroundImage = image_path

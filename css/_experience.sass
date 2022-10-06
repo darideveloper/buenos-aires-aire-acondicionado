@@ -26,20 +26,17 @@
 
     .cards-imgs-wrapper
 
-        // Layouit for cards-imgs groups
         .cards-imgs
             display: grid
             height: 450px
             gap: 30px
             margin-top: 20px
-
-            // &.clinicas-hospitales
             grid-template-columns: repeat(3, 1fr)
             grid-template-rows: repeat(2, 1fr)
 
-            .card-bg-1
-                grid-row-start: 1
-                grid-row-end: 3
+            // Custim grid for specific card group
+            &.oficinas-edificios
+                grid-template-columns: repeat(4, 1fr)
 
             .card
                 display: flex
@@ -86,3 +83,19 @@
                         margin: 0
                         color: $color-d
 
+            // Cards layout
+            .card-bg-1
+                grid-row-start: 1
+                grid-row-end: 3
+
+            .card-bg-6
+                grid-row-start: 1
+                grid-row-end: 3
+
+            .card-bg-17
+                grid-row-start: 1
+                grid-row-end: 3
+
+            .card-bg-19
+                grid-column-start: 3
+                grid-column-end: 5
