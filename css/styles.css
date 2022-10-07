@@ -144,6 +144,39 @@ h2 {
   background: rgba(2, 104, 173, 0.8);
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.cards .card img {
+  width: 100%;
+}
+.cards .card h3, .cards .card p {
+  width: 80%;
+  margin: 0 auto;
+}
+.cards .card h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #029395;
+}
+.cards .card h3 span {
+  display: block;
+}
+.cards .card .btn {
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  display: table;
+}
+
 #hero .progress {
   background: #ffffff;
 }
@@ -200,38 +233,6 @@ h2 {
 
 #solutions h2 + p {
   text-align: center;
-}
-#solutions .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-}
-#solutions .cards .card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-}
-#solutions .cards .card img {
-  width: 100%;
-}
-#solutions .cards .card h3, #solutions .cards .card p {
-  width: 80%;
-  margin: 0 auto;
-}
-#solutions .cards .card h3 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #029395;
-}
-#solutions .cards .card h3 span {
-  display: block;
-}
-#solutions .cards .card .btn {
-  margin: 0 auto;
-  margin-top: 40px;
-  text-align: center;
-  display: table;
 }
 
 #experience .tabs {
@@ -351,6 +352,10 @@ h2 {
 #about .icons-img-wrapper img {
   width: 40%;
   height: auto;
+}
+
+#technologies h2 + p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
