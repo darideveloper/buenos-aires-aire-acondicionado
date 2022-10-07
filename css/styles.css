@@ -328,4 +328,29 @@ h2 {
   grid-column-end: 5;
 }
 
+#about .icons-img-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#about .icons-img-wrapper .icons {
+  width: 40%;
+}
+#about .icons-img-wrapper .icons .icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#about .icons-img-wrapper .icons .icon img {
+  width: 80px;
+  margin: 20px;
+}
+#about .icons-img-wrapper .icons .icon h3 {
+  color: #029395;
+}
+#about .icons-img-wrapper img {
+  width: 40%;
+  height: auto;
+}
+
 /*# sourceMappingURL=styles.css.map */
