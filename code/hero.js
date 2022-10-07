@@ -1,6 +1,6 @@
-export function mount_splide () {
+export function mount_splide_hero () {
     // Activate gallery in hero
-    var splide = new Splide('.splide')
+    var splide = new Splide('.hero .splide')
     var bar = splide.root.querySelector('.progress-bar')
     
     // Updates the bar width whenever the carousel moves:
@@ -13,7 +13,7 @@ export function mount_splide () {
     splide.mount()
 
     // Get slides
-    const slides = Array.from(document.querySelectorAll (".splide__slide"))
+    const slides = Array.from(document.querySelectorAll (".hero .splide__slide"))
 
     // Looop for each slide
     for (const [index, slide] of slides.entries()) {

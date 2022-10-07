@@ -358,4 +358,27 @@ h2 {
   text-align: center;
 }
 
+#partners {
+  background-color: #0268ad;
+  padding-bottom: 40px;
+}
+#partners h2 {
+  text-align: cente;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  padding: 40px 0;
+}
+#partners .splite-wrapper {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+#partners .splite-wrapper .splide .splide__slide img {
+  height: 50px;
+  width: auto;
+}
+#partners .splite-wrapper .splide .splide__arrow.splide__arrow--prev {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */

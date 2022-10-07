@@ -1,7 +1,8 @@
 import {show_alert} from './alerts.js'
 import {update_form_redirect} from './contact_form.js'
-import {mount_splide} from './hero.js'
+import {mount_splide_hero} from './hero.js'
 import {set_cards_bg_imgs, update_cards_imgs} from './cards_imgs.js'
+import {mount_splide_partners} from './partners.js'
 
 function sleep(s) {
     // Wait specific seconds
@@ -15,8 +16,11 @@ window.onload = async function () {
     // Update redirect link in contact form
     update_form_redirect ()
 
-    // Maon gallery
-    mount_splide ()
+    // Maunt hero  gallery
+    mount_splide_hero ()
+
+    // Mount partners gallery
+    mount_splide_partners ()
     
     // Set cards background
     set_cards_bg_imgs ()
