@@ -44,7 +44,7 @@
         </div>
     </header>
     <main>
-        <section class="hero full-width" id="hero">
+        <section class="hero full-width hidden" id="hero">
             <div class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
@@ -100,7 +100,7 @@
             </div>
         </section>
 
-        <section class="solutions regular-width mg-section" id="solutions">
+        <section class="solutions regular-width mg-section hidden" id="solutions">
             <h2>NUESTRAS SOLUCIONES</h2>
             <p>Te brindamos soluciones especializadas para el éxito y rentabilidad de tu negocio.</p>
             <section class="cards">
@@ -141,7 +141,7 @@
             
         </section>
 
-        <section class="experience regular-width mg-section" id="experience">
+        <section class="experience regular-width mg-section hidden" id="experience">
             <h2>NUESTRA EXPERIENCIA</h2>
             <div class="tabs">
                 <button class="recientes active">RECIENTES</button>
@@ -389,8 +389,7 @@
             
         </section>
 
-
-        <section class="about mg-section regular-width" id="about">
+        <section class="about mg-section regular-width hidden" id="about">
             <h2>¿QUÉ NOS DIFERENCIA?</h2>
             <p>
                 En Buenos Aires gestionamos proyectos, desde su diseño hasta la aceptación del mismo con asesoría especializada enfocada en la eficiencia energética y sostenibilidad del negocio, bajo los estándares requeridos por nuestros clientes que garantizan el confort y bioseguridad de los sistemas de ventilación industrial y aire acondicionado.
@@ -415,7 +414,7 @@
 
         </section>
 
-        <section class="technologies regular-width mg-section" id="technologies">
+        <section class="technologies regular-width mg-section hidden" id="technologies">
             <h2>TECNOLOGÍAS Y SOCIOS ESTRATÉGICOS</h2>
             <p>Para proporcionar la eficiencia energética y sostenibilidad de tu negocio.</p>
             <section class="cards">
@@ -455,7 +454,7 @@
             </section>
         </section>
 
-        <section class="partners mg-section" id="partners">
+        <section class="partners mg-section hidden" id="partners">
             <div class="content regular-width"></div>
             <h2>NUESTROS SOCIOS TECNOLÓGICOS</h2>
             <div class="splite-wrapper">
@@ -483,7 +482,7 @@
             </div>
         </section>
 
-        <section class="services regular-width mg-section" id="services">
+        <section class="services regular-width mg-section hidden" id="services">
             <h2>SERVICIOS DE MANTENIMIENTO</h2>
             <section class="cards-services">
                 <div class="card">
@@ -541,7 +540,7 @@
             </section>
         </section>
 
-        <section class="clients mg-section" id="clients">
+        <section class="clients mg-section hidden" id="clients">
             <div class="content regular-width"></div>
             <h2>NUESTROS PRINCIPALES CLIENTES</h2>
             <div class="splite-wrapper">
@@ -578,15 +577,44 @@
             </div>
         </section>
 
-        <section class="contact hidden" id="contact">
+        <section class="contact mg-section" id="contact">
+            <div class="bg-wrapper">
+                <div class="bg"></div>
+            </div>
             <form action="https://darideveloper.pythonanywhere.com/contactforms-api/" method="post">
-                <h2>Contact Us</h2>
-                <div class="separator"></div>
-                <fieldset>
-                    <input type="text" name="name" id="name" placeholder="name" required>
-                    <input type="email" name="email" id="email" placeholder="email" required>
-                    <input type="submit" value="Submit" class="btn submit">
-                </fieldset>    
+                <h2>CONTACTANOS</h2>
+                <div class="field">
+                    <label for="nombre">Nombre y Apellido (*)</label>
+                    <input type="text" name="nombre" id="nombre" required class="input">
+                </div>
+
+                
+                <div class="field">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" name="empresa" id="empresa" class="input">
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label for="telefono">Telefono (*)</label>
+                        <input type="tel" name="telefono" id="telefono" required class="input">
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email (*)</label>
+                        <input type="email" name="email" id="email" required class="input">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="mensaje">Consulta o requerimiento (*)</label>
+                    <textarea name="mensaje" id="mensaje" required class="input"></textarea>
+                </div>
+
+                <div class="wrapper-submit">
+                    <input type="submit" value="Enviar" class="btn submit">
+                </div>
+
                 <input type="hidden" name="user" id="user" value="user_name">
                 <input type="hidden" name="api_key" id="api_key" value="api_key">
                 <input type="hidden" name="redirect" id="redirect" value="">
@@ -610,5 +638,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
 
     <script src="./code/loader.js" type="module"></script>
+    <script src="./code/contact.js" type="module"></script>
 </body>
 </html>

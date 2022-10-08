@@ -1,13 +1,26 @@
 .btn
     display: inline-block
     transition-duration: $transition-duration
+    padding: 15px 40px
+    border: none
+    background: none
+    cursor: pointer
 
     &.cta
-        padding: 15px 40px
         background-color: $color-a
         color: $color-d
-        // border: 2px solid $color-a
         border-radius: 100px
 
         &:hover
             background-color: rgba($color-a, 0.8)
+
+    &.submit
+        background-color: $color-d
+        color: $color-c
+        border-radius: 10px
+        font-weight: bold
+        font-weight: 16px
+
+        &:hover
+            background-color: rgba($color-d, 0.8)
+

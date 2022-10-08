@@ -117,15 +117,28 @@ h2 {
 .btn {
   display: inline-block;
   transition-duration: 0.3s;
+  padding: 15px 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .btn.cta {
-  padding: 15px 40px;
   background-color: #029395;
   color: #ffffff;
   border-radius: 100px;
 }
 .btn.cta:hover {
   background-color: rgba(2, 147, 149, 0.8);
+}
+.btn.submit {
+  background-color: #ffffff;
+  color: #666262;
+  border-radius: 10px;
+  font-weight: bold;
+  font-weight: 16px;
+}
+.btn.submit:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 ::-webkit-scrollbar {
@@ -431,6 +444,87 @@ h2 {
 }
 #clients .splite-wrapper .splide .splide__arrow.splide__arrow--prev {
   display: none;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+#contact .bg-wrapper {
+  width: calc(100% - 600px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 105%;
+  height: 105%;
+  z-index: -1;
+}
+#contact .bg-wrapper .bg {
+  background-image: url("../imgs/contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(6px);
+  width: 100%;
+  height: 100%;
+}
+#contact form {
+  background-color: #029395;
+  width: 500px;
+  padding: 20px 40px;
+}
+#contact form h2, #contact form label {
+  color: #ffffff;
+  text-align: left;
+  font-weight: normal;
+}
+#contact form .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact form .row .field {
+  width: 45%;
+}
+#contact form .field {
+  margin-bottom: 20px;
+}
+#contact form .field input {
+  display: block;
+}
+#contact form .field label {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  display: inline-block;
+  transition-duration: 0.3s;
+}
+#contact form .field input:not(.submit), #contact form .field textarea {
+  width: calc(100% - 40px - 8px);
+  font-size: 16px;
+  padding: 8px 20px;
+  border: none;
+  border: 4px solid rgba(2, 104, 173, 0);
+  transition-duration: 0.3s;
+}
+#contact form .field textarea {
+  height: 150px;
+}
+#contact form .field.active label {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+#contact form .wrapper-submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=styles.css.map */
