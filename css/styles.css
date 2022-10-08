@@ -408,4 +408,29 @@ h2 {
   padding-left: 40px;
 }
 
+#clients h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#clients .splite-wrapper {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+#clients .splite-wrapper .splide .splide__slide {
+  border: 2px solid rgba(102, 98, 98, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 0 20px;
+  width: calc(20% - 40px) !important;
+}
+#clients .splite-wrapper .splide .splide__slide img {
+  width: 60%;
+}
+#clients .splite-wrapper .splide .splide__arrow.splide__arrow--prev {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
