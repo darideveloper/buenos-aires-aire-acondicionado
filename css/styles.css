@@ -190,6 +190,49 @@ h2 {
   display: table;
 }
 
+#header {
+  background-color: rgba(2, 147, 149, 0.5);
+  padding-top: 40px;
+}
+#header .content-wrapper {
+  background-color: #ffffff;
+}
+#header .content-wrapper .content {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+#header .content-wrapper .content .logo img {
+  width: 150px;
+}
+#header .content-wrapper .content nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .content-wrapper .content nav ul li {
+  list-style: none;
+}
+#header .content-wrapper .content nav ul li a {
+  text-transform: uppercase;
+  padding: 0 20px;
+  height: 75px;
+  line-height: 75px;
+  display: inline-block;
+}
+#header .content-wrapper .content nav ul li a.disabled {
+  opacity: 0.5;
+}
+#header .content-wrapper .content nav ul li a:not(.disabled):hover {
+  color: #0268ad;
+  font-weight: bold;
+}
+#header .content-wrapper .content .btn.display {
+  display: none;
+}
+
 #hero .progress {
   background: #ffffff;
 }

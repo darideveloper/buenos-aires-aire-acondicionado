@@ -1,5 +1,41 @@
 #header
-    
+    background-color: rgba($color-a, 0.5)
+    padding-top: 40px
 
-    // @media screen and (max-width: $regular-width-media-query)
-        
+    .content-wrapper
+        background-color: $color-d
+
+        .content
+            display: flex
+            align-content: center
+            justify-content: space-between
+
+            .logo img
+                width: 150px
+
+            nav ul
+                margin: 0
+                padding: 0
+                display: flex
+                align-items: center
+                justify-content: center
+
+                li
+                    list-style: none
+
+                    a
+                        text-transform: uppercase
+                        padding: 0 20px
+                        height: 75px
+                        line-height: 75px
+                        display: inline-block
+
+                        &.disabled
+                            opacity: 0.5
+
+                        &:not(.disabled):hover
+                            color: $color-b
+                            font-weight: bold
+
+            .btn.display
+                display: none
