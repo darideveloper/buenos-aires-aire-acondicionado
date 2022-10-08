@@ -1,5 +1,51 @@
 #footer
-    
+    margin-top: 20px
+    margin-block: 20px
 
-    // @media screen and (max-width: $regular-width-media-query)
-        
+    p, span, a
+        font-size: 14px
+        color: $color-c
+    
+    .widgets
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+
+        .widget
+            padding: 20px
+
+            a:hover, a:hover span
+                color: $color-a
+
+            h3
+                color: $color-a
+
+            .logo
+                width: 200px
+                height: auto
+
+            nav ul
+                margin: 0
+                padding: 0
+
+                li
+                    list-style: none
+
+                    a
+                        padding: 10px 0
+                        display: inline-block
+
+            .icon-card
+                display: block
+                display: flex
+                align-items: center
+                justify-content: flex-start
+
+                svg
+                    width: 30px
+                    height: 30px
+                    fill: $color-a
+                    margin: 10px
+
+    small
+        display: block
+        text-align: center

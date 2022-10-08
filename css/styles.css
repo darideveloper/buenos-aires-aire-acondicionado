@@ -527,4 +527,57 @@ h2 {
   justify-content: flex-end;
 }
 
+#footer {
+  margin-top: 20px;
+  margin-block: 20px;
+}
+#footer p, #footer span, #footer a {
+  font-size: 14px;
+  color: #666262;
+}
+#footer .widgets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#footer .widgets .widget {
+  padding: 20px;
+}
+#footer .widgets .widget a:hover, #footer .widgets .widget a:hover span {
+  color: #029395;
+}
+#footer .widgets .widget h3 {
+  color: #029395;
+}
+#footer .widgets .widget .logo {
+  width: 200px;
+  height: auto;
+}
+#footer .widgets .widget nav ul {
+  margin: 0;
+  padding: 0;
+}
+#footer .widgets .widget nav ul li {
+  list-style: none;
+}
+#footer .widgets .widget nav ul li a {
+  padding: 10px 0;
+  display: inline-block;
+}
+#footer .widgets .widget .icon-card {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#footer .widgets .widget .icon-card svg {
+  width: 30px;
+  height: 30px;
+  fill: #029395;
+  margin: 10px;
+}
+#footer small {
+  display: block;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
