@@ -381,4 +381,31 @@ h2 {
   display: none;
 }
 
+#services .cards-services {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+#services .cards-services .card {
+  text-align: center;
+  padding: 20px;
+}
+#services .cards-services .card h3 {
+  color: #029395;
+}
+#services .cards-services .card .wrapper-img {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+}
+#services .cards-services .card .wrapper-img img {
+  width: 80px;
+  height: auto;
+}
+#services .cards-services .card ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  padding-left: 40px;
+}
+
 /*# sourceMappingURL=styles.css.map */
