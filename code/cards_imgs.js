@@ -22,6 +22,12 @@ export function update_cards_imgs () {
     const cards_sections = document.querySelectorAll(".cards-imgs")
     for (const menu_button of menu_buttons) {
         menu_button.addEventListener("click", (event) => {
+            // Deactivate last buttons
+            menu_buttons.forEach ((menu_button) => {menu_button.classList.remove("active")})
+
+            // activate current button
+            event.target.classList.add ("active")
+
             // Get identifier class
             const group_class = event.target.classList[0]
 
