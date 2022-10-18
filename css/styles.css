@@ -352,6 +352,7 @@ h2 {
   left: 0;
   background-size: cover;
   z-index: -1;
+  border-radius: 20px;
 }
 #experience .cards-imgs-wrapper .cards-imgs .card .content {
   opacity: 0;
@@ -430,7 +431,7 @@ h2 {
   background-color: #ffffff;
 }
 #partners .splite-wrapper .splide .splide__slide img {
-  height: 50px;
+  height: 65px;
   width: auto;
 }
 #partners .splite-wrapper .splide .splide__arrow.splide__arrow--prev {
@@ -440,10 +441,10 @@ h2 {
 #services .cards-services {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
 }
 #services .cards-services .card {
   text-align: center;
-  padding: 20px;
 }
 #services .cards-services .card h3 {
   color: #029395;
@@ -461,7 +462,13 @@ h2 {
   margin: 0;
   padding: 0;
   text-align: left;
-  padding-left: 40px;
+}
+#services .cards-services .card ul li {
+  list-style: none;
+  text-align: center;
+}
+#services .cards-services .card ul li::before {
+  content: "- ";
 }
 
 #clients h2 {
@@ -474,11 +481,9 @@ h2 {
   background-color: #ffffff;
 }
 #clients .splite-wrapper .splide .splide__slide {
-  border: 2px solid rgba(102, 98, 98, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 30px;
   margin: 0 20px;
   width: calc(20% - 40px) !important;
 }
@@ -513,7 +518,7 @@ h2 {
   background-image: url("../imgs/contact.png");
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(6px);
+  background-position: center center;
   width: 100%;
   height: 100%;
 }
@@ -577,13 +582,12 @@ h2 {
 #footer p, #footer span, #footer a {
   font-size: 14px;
   color: #666262;
+  font-style: normal;
 }
 #footer .widgets {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-#footer .widgets .widget {
-  padding: 20px;
+  grid-template-columns: 2fr 1.2fr 2fr 2fr;
+  gap: 60px;
 }
 #footer .widgets .widget a:hover, #footer .widgets .widget a:hover span {
   color: #029395;
@@ -621,6 +625,10 @@ h2 {
 #footer small {
   display: block;
   text-align: center;
+  margin-top: 30px;
+}
+#footer small, #footer small a {
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

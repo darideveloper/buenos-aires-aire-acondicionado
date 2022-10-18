@@ -5,13 +5,14 @@
     p, span, a
         font-size: 14px
         color: $color-c
+        font-style: normal
     
     .widgets
         display: grid
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: 2fr 1.2fr 2fr 2fr
+        gap: 60px
 
         .widget
-            padding: 20px
 
             a:hover, a:hover span
                 color: $color-a
@@ -49,3 +50,7 @@
     small
         display: block
         text-align: center
+        margin-top: 30px
+
+        &, & a
+            font-size: 10px

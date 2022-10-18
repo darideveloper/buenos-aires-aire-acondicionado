@@ -3,10 +3,10 @@
     .cards-services
         display: grid
         grid-template-columns: repeat(5, 1fr)
+        gap: 20px
 
         .card
             text-align: center
-            padding: 20px
             
             h3
                 color: $color-a
@@ -24,4 +24,10 @@
                 margin: 0
                 padding: 0
                 text-align: left
-                padding-left: 40px
+                
+                li
+                    list-style: none
+                    text-align: center
+
+                    &::before
+                        content: "- "
