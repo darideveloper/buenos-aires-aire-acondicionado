@@ -511,6 +511,21 @@ h2 {
   width: 40%;
   height: auto;
 }
+@media screen and (max-width: 700px) {
+  #about .icons-img-wrapper {
+    flex-direction: column;
+  }
+  #about .icons-img-wrapper .icons, #about .icons-img-wrapper img {
+    width: 100%;
+  }
+  #about .icons-img-wrapper .icons .icon, #about .icons-img-wrapper img .icon {
+    justify-content: center;
+  }
+  #about .icons-img-wrapper .icons .icon img, #about .icons-img-wrapper img .icon img {
+    margin: 5px 0;
+    margin-right: 20px;
+  }
+}
 
 #technologies h2 + p {
   text-align: center;
