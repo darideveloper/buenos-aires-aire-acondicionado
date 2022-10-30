@@ -140,6 +140,12 @@ h2 {
 .btn.submit:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
+.btn.menu svg {
+  width: 50px;
+  height: 50px;
+  fill: #029395;
+  opacity: 0.5;
+}
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -194,6 +200,9 @@ h2 {
   background-color: rgba(2, 147, 149, 0.5);
   padding-top: 40px;
 }
+#header .btn.menu {
+  display: none;
+}
 #header .content-wrapper {
   background-color: #ffffff;
 }
@@ -224,6 +233,7 @@ h2 {
 }
 #header .content-wrapper .content nav ul li a.disabled {
   opacity: 0.5;
+  cursor: default;
 }
 #header .content-wrapper .content nav ul li a:not(.disabled):hover {
   color: #0268ad;
@@ -231,6 +241,47 @@ h2 {
 }
 #header .content-wrapper .content .btn.display {
   display: none;
+}
+@media screen and (max-width: 950px) {
+  #header .content-wrapper .content {
+    flex-direction: column;
+  }
+  #header .content-wrapper .content .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  #header .content-wrapper .content {
+    flex-direction: row;
+  }
+  #header .content-wrapper .content .btn.menu {
+    display: inline-block;
+  }
+  #header .content-wrapper .content .logo {
+    justify-content: flex-start;
+  }
+  #header .content-wrapper .content nav {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 200px;
+    z-index: 1;
+    box-shadow: -1px 3px 10px -4px black;
+    transition-duration: 0.5s;
+  }
+  #header .content-wrapper .content nav.clossed {
+    right: -250px;
+  }
+  #header .content-wrapper .content nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 }
 
 #hero .progress {

@@ -4,6 +4,7 @@ import {mount_splide_hero} from './hero.js'
 import {set_cards_bg_imgs, update_cards_imgs} from './cards_imgs.js'
 import {mount_splide_partners, mount_splide_clientes} from './partners_clients.js'
 import {mount_splide_subpages} from './sliders_pages.js'
+import {header_events} from './header.js'
 
 function sleep(s) {
     // Wait specific seconds
@@ -28,6 +29,9 @@ window.onload = async function () {
 
     // Activate buttons events for update cards images
     update_cards_imgs ()
+
+    // Add listeners to header buttons
+    header_events ()
 
 
 }

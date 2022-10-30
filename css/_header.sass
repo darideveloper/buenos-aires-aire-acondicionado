@@ -2,6 +2,9 @@
     background-color: rgba($color-a, 0.5)
     padding-top: 40px
 
+    .btn.menu
+        display: none
+
     .content-wrapper
         background-color: $color-d
 
@@ -32,6 +35,7 @@
 
                         &.disabled
                             opacity: 0.5
+                            cursor: default
 
                         &:not(.disabled):hover
                             color: $color-b
@@ -39,3 +43,45 @@
 
             .btn.display
                 display: none
+
+
+            @media screen and (max-width: 950px)
+                flex-direction: column
+                
+                .logo
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+            @media screen and (max-width: 700px)
+                flex-direction: row
+
+                .btn.menu
+                    display: inline-block
+
+
+                .logo
+                    justify-content: flex-start
+
+                nav 
+                    position: fixed
+                    top: 0
+                    right: 0
+                    background-color: $color-d
+                    height: 100vh
+                    width: 200px
+                    z-index: 1
+                    box-shadow: -1px 3px 10px -4px black
+                    transition-duration: 0.5s
+                    padding-top: 40px
+
+                    &.clossed
+                        right: -250px
+                        
+                    ul
+                        display: flex
+                        align-items: center
+                        justify-content: flex-start
+                        flex-direction: column
+
+                    
