@@ -40,4 +40,9 @@ export function update_partners_clients_splides () {
         splide_partners.options.perPage = slides_page
         splide_partners.refresh()
     }
+
+    if (splide_clientes) {
+        splide_clientes.options.perPage = slides_page
+        splide_clientes.refresh()
+    }
 }
