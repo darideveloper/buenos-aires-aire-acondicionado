@@ -3,6 +3,7 @@ import {update_form_redirect} from './contact_form.js'
 import {mount_splide_hero} from './hero.js'
 import {set_cards_bg_imgs, update_cards_imgs} from './cards_imgs.js'
 import {mount_splide_partners, mount_splide_clientes} from './partners_clients.js'
+import {mount_splide_subpages} from './sliders_pages.js'
 
 function sleep(s) {
     // Wait specific seconds
@@ -20,6 +21,7 @@ window.onload = async function () {
     mount_splide_hero ()
     mount_splide_partners ()
     mount_splide_clientes ()
+    mount_splide_subpages ()
     
     // Set cards background
     set_cards_bg_imgs ()

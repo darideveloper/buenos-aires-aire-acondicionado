@@ -574,6 +574,58 @@ h2 {
   justify-content: flex-end;
 }
 
+main.solutions .hero {
+  height: 50vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: url("../imgs/solutions/hero.png");
+}
+main.solutions .hero h1 {
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(2, 104, 173, 0.8);
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+main.solutions .cards-page {
+  margin: 100px auto;
+}
+main.solutions .cards-page h2, main.solutions .cards-page h3 {
+  text-align: left;
+  color: #029395;
+}
+main.solutions .cards-page .card-page {
+  margin-top: 50px;
+}
+main.solutions .cards-page .card-page .splide .splide__pagination.splide__pagination--ltr {
+  display: none;
+}
+main.solutions .cards-page .card-page .splide .splide__slide {
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main.solutions .cards-page .card-page .splide .splide__slide img {
+  width: 500px;
+  margin-right: 50px;
+}
+main.solutions .cards-page .card-page .splide .splide__slide .btn.cta {
+  margin-top: 20px;
+}
+main.solutions .cards-page .card-page .splide .splide__slide ul {
+  padding-left: 0;
+}
+main.solutions .cards-page .card-page .splide .splide__slide ul li::marker {
+  color: #029395;
+}
+main.solutions .cards-page .card-page .splide .splide__slide b.blue, main.solutions .cards-page .card-page .splide .splide__slide span {
+  color: #0268ad;
+  font-weight: bold;
+}
+
 #footer {
   margin-top: 20px;
   margin-block: 20px;

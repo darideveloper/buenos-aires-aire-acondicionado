@@ -3,5 +3,7 @@ export function update_form_redirect () {
     const url_base = url_current.split ("?")[0]
     const url_redirect = `${url_base}?thanks=true`
     const form_redirect_input = document.querySelector ("form #redirect")
-    form_redirect_input.value = url_redirect
+    if (form_redirect_input) {
+        form_redirect_input.value = url_redirect
+    }
 }
