@@ -114,6 +114,10 @@ h2 {
   margin-top: 80px;
 }
 
+.splide .splide__pagination.splide__pagination--ltr {
+  display: none;
+}
+
 .btn {
   display: inline-block;
   transition-duration: 0.3s;
@@ -539,12 +543,17 @@ h2 {
   text-align: cente;
   color: #ffffff;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   padding: 40px 0;
 }
 #partners .splite-wrapper {
   padding: 40px 0;
   background-color: #ffffff;
+}
+#partners .splite-wrapper .splide .splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #partners .splite-wrapper .splide .splide__slide img {
   height: 65px;
@@ -700,9 +709,6 @@ h2 {
 }
 .cards-page .card-page {
   margin-top: 50px;
-}
-.cards-page .card-page .splide .splide__pagination.splide__pagination--ltr {
-  display: none;
 }
 .cards-page .card-page .splide .splide__slide {
   padding: 0 60px;

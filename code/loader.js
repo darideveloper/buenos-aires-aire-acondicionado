@@ -2,7 +2,7 @@ import {show_alert} from './alerts.js'
 import {update_form_redirect} from './contact_form.js'
 import {mount_splide_hero} from './hero.js'
 import {set_cards_bg_imgs, update_cards_imgs} from './cards_imgs.js'
-import {mount_splide_partners, mount_splide_clientes} from './partners_clients.js'
+import {mount_splide_partners, mount_splide_clientes, update_partners_clients_splides} from './sliders_pagination.js'
 import {mount_splide_subpages} from './sliders_pages.js'
 import {header_events} from './header.js'
 
@@ -23,6 +23,9 @@ window.onload = async function () {
     mount_splide_partners ()
     mount_splide_clientes ()
     mount_splide_subpages ()
+
+    // Update splides after render
+    update_partners_clients_splides ()
     
     // Set cards background
     set_cards_bg_imgs ()
@@ -37,5 +40,5 @@ window.onload = async function () {
 }
 
 window.onresize = function() {
-    console.log ("Resize")
+    update_partners_clients_splides ()
 }
