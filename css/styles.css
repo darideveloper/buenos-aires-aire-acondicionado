@@ -371,6 +371,10 @@ h2 {
 
 #experience .tabs {
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #experience .tabs button {
   border: none;
@@ -381,12 +385,6 @@ h2 {
   color: #029395;
   border-bottom: 2px solid rgba(2, 147, 149, 0);
   transition-duration: 0.3s;
-}
-#experience .tabs button:first-child {
-  margin-left: 0;
-}
-#experience .tabs button:last-child {
-  margin-right: 0;
 }
 #experience .tabs button.active {
   font-weight: bold;
@@ -462,6 +460,31 @@ h2 {
 #experience .cards-imgs-wrapper .cards-imgs .card-bg-19 {
   grid-column-start: 3;
   grid-column-end: 5;
+}
+@media screen and (max-width: 650px) {
+  #experience .cards-imgs-wrapper .cards-imgs, #experience .cards-imgs-wrapper .cards-imgs.oficinas-edificios {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+  }
+  #experience .cards-imgs-wrapper .cards-imgs .card, #experience .cards-imgs-wrapper .cards-imgs.oficinas-edificios .card {
+    height: 50vw;
+  }
+  #experience .cards-imgs-wrapper .cards-imgs .card-bg-1, #experience .cards-imgs-wrapper .cards-imgs.oficinas-edificios .card-bg-1 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  #experience .cards-imgs-wrapper .cards-imgs .card-bg-6, #experience .cards-imgs-wrapper .cards-imgs.oficinas-edificios .card-bg-6 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  #experience .cards-imgs-wrapper .cards-imgs .card-bg-17, #experience .cards-imgs-wrapper .cards-imgs.oficinas-edificios .card-bg-17 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  #experience .cards-imgs-wrapper .cards-imgs .card-bg-19, #experience .cards-imgs-wrapper .cards-imgs.oficinas-edificios .card-bg-19 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
 }
 
 #about .icons-img-wrapper {

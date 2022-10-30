@@ -2,6 +2,11 @@
 
     .tabs
         margin-top: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+
         button
             border: none
             background: none
@@ -11,12 +16,6 @@
             color: $color-a
             border-bottom: 2px solid rgba($color-a, 0)
             transition-duration: $transition-duration
-
-            &:first-child
-                margin-left: 0
-            
-            &:last-child
-                margin-right: 0
 
             &.active
                 font-weight: bold
@@ -101,3 +100,28 @@
             .card-bg-19
                 grid-column-start: 3
                 grid-column-end: 5
+
+        @media screen and (max-width: 650px)
+            .cards-imgs, .cards-imgs.oficinas-edificios
+                grid-template-columns: repeat(1, 1fr)
+                height: auto
+
+                .card
+                    height: 50vw
+
+                // Restart Cards layout
+                .card-bg-1
+                    grid-row-start: 1
+                    grid-row-end: 1
+
+                .card-bg-6
+                    grid-row-start: 1
+                    grid-row-end: 1
+
+                .card-bg-17
+                    grid-row-start: 1
+                    grid-row-end: 1
+
+                .card-bg-19
+                    grid-column-start: 1
+                    grid-column-end: 1
