@@ -662,6 +662,27 @@ main.about .priority .icons-cards .card img {
   margin-right: 30px;
 }
 
+main.tech h2 {
+  margin-bottom: 50px;
+}
+main.tech h2 + p {
+  margin-top: 0;
+}
+main.tech .hero {
+  height: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main.tech .hero h1 {
+  font-size: 50px;
+  color: #0268ad;
+  width: 30%;
+}
+main.tech .hero img {
+  width: 60%;
+}
+
 #footer {
   margin-top: 20px;
   margin-block: 20px;

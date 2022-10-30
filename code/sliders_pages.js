@@ -5,6 +5,10 @@ export function mount_splide_subpages () {
         ".card-page.eficiencia .splide",
         ".card-page.epc .splide",
         ".card-page.mantenimiento .splide",
+        ".card-page.enfriamiento .splide",
+        ".card-page.monitoreo .splide",
+        ".card-page.ventilacion .splide",
+
     ]
 
     for (const selector of selectors) {
