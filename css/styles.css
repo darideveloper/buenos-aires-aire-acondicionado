@@ -671,6 +671,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: justify;
 }
 .cards-page .card-page .splide .splide__slide img {
   width: 500px;
