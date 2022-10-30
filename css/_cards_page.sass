@@ -1,0 +1,40 @@
+.cards-page
+    margin: 100px auto
+
+    h2, h3
+        text-align: left
+        color: $color-a
+
+    .card-page
+        margin-top: 50px
+
+        .splide
+            // Hide pagination
+            .splide__pagination.splide__pagination--ltr
+                display: none
+
+            .splide__slide
+                padding: 0 60px
+                display: flex
+                align-items: center
+                justify-content: center
+
+
+                img
+                    width: 500px
+                    margin-right: 50px
+
+                .btn.cta
+                    margin-top: 20px
+
+
+                ul
+                    padding-left: 0
+
+                    li
+                        &::marker
+                            color: $color-a
+
+                b.blue, span
+                    color: $color-b
+                    font-weight: bold

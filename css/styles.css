@@ -574,6 +574,43 @@ h2 {
   justify-content: flex-end;
 }
 
+.cards-page {
+  margin: 100px auto;
+}
+.cards-page h2, .cards-page h3 {
+  text-align: left;
+  color: #029395;
+}
+.cards-page .card-page {
+  margin-top: 50px;
+}
+.cards-page .card-page .splide .splide__pagination.splide__pagination--ltr {
+  display: none;
+}
+.cards-page .card-page .splide .splide__slide {
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards-page .card-page .splide .splide__slide img {
+  width: 500px;
+  margin-right: 50px;
+}
+.cards-page .card-page .splide .splide__slide .btn.cta {
+  margin-top: 20px;
+}
+.cards-page .card-page .splide .splide__slide ul {
+  padding-left: 0;
+}
+.cards-page .card-page .splide .splide__slide ul li::marker {
+  color: #029395;
+}
+.cards-page .card-page .splide .splide__slide b.blue, .cards-page .card-page .splide .splide__slide span {
+  color: #0268ad;
+  font-weight: bold;
+}
+
 main.solutions .hero {
   height: 50vw;
   display: flex;
@@ -589,41 +626,40 @@ main.solutions .hero h1 {
   color: #ffffff;
   margin-bottom: 100px;
 }
-main.solutions .cards-page {
-  margin: 100px auto;
+
+main.about h2 {
+  margin-bottom: 50px;
 }
-main.solutions .cards-page h2, main.solutions .cards-page h3 {
-  text-align: left;
-  color: #029395;
+main.about h2 + p {
+  margin-top: 0;
 }
-main.solutions .cards-page .card-page {
-  margin-top: 50px;
-}
-main.solutions .cards-page .card-page .splide .splide__pagination.splide__pagination--ltr {
-  display: none;
-}
-main.solutions .cards-page .card-page .splide .splide__slide {
-  padding: 0 60px;
+main.about .hero {
+  height: 50vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-main.solutions .cards-page .card-page .splide .splide__slide img {
-  width: 500px;
-  margin-right: 50px;
-}
-main.solutions .cards-page .card-page .splide .splide__slide .btn.cta {
-  margin-top: 20px;
-}
-main.solutions .cards-page .card-page .splide .splide__slide ul {
-  padding-left: 0;
-}
-main.solutions .cards-page .card-page .splide .splide__slide ul li::marker {
-  color: #029395;
-}
-main.solutions .cards-page .card-page .splide .splide__slide b.blue, main.solutions .cards-page .card-page .splide .splide__slide span {
+main.about .hero h1 {
+  font-size: 50px;
   color: #0268ad;
-  font-weight: bold;
+  width: 40%;
+}
+main.about .hero img {
+  width: 50%;
+}
+main.about .priority .icons-cards {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+main.about .priority .icons-cards .card {
+  display: flex;
+  width: 100%;
+}
+main.about .priority .icons-cards .card img {
+  width: 80px;
+  margin-right: 30px;
 }
 
 #footer {
