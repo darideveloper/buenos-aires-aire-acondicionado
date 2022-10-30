@@ -264,7 +264,7 @@ h2 {
   }
   #header .content-wrapper .content nav {
     position: fixed;
-    top: 40px;
+    top: 0;
     right: 0;
     background-color: #ffffff;
     height: 100vh;
@@ -272,6 +272,7 @@ h2 {
     z-index: 1;
     box-shadow: -1px 3px 10px -4px black;
     transition-duration: 0.5s;
+    padding-top: 40px;
   }
   #header .content-wrapper .content nav.clossed {
     right: -250px;
@@ -335,6 +336,24 @@ h2 {
 #hero .splide__slide .btn-wrapper .btn {
   margin: 0 auto;
   display: table;
+}
+@media screen and (max-width: 700px) {
+  #hero .splide__slide {
+    height: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  #hero .splide__slide .title, #hero .splide__slide .logo, #hero .splide__slide .btn-wrapper {
+    margin: 0;
+    position: initial;
+  }
+}
+@media screen and (max-width: 700px) {
+  #hero .splide__slide {
+    height: 100vw;
+  }
 }
 
 #solutions h2 + p {
