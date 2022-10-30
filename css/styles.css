@@ -871,6 +871,31 @@ main.tech .hero img {
   fill: #029395;
   margin: 10px;
 }
+@media screen and (max-width: 1150px) {
+  #footer .widgets {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #footer .widgets .widget.links {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  #footer .widgets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #footer .widgets .widget.links {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 650px) {
+  #footer .widgets {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  #footer .widgets .widget .icon-card {
+    justify-content: center;
+  }
+}
 #footer small {
   display: block;
   text-align: center;

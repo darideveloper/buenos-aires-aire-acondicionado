@@ -47,6 +47,26 @@
                     fill: $color-a
                     margin: 10px
 
+        @media screen and (max-width: 1150px)
+            grid-template-columns: repeat(3, 1fr)
+
+            .widget.links
+                display: none
+
+        @media screen and (max-width: 900px)
+            grid-template-columns: repeat(2, 1fr)
+
+            .widget.links
+                display: inline-block
+
+
+        @media screen and (max-width: 650px)
+            grid-template-columns: repeat(1, 1fr)
+            text-align: center
+
+            .widget .icon-card
+                justify-content: center
+
     small
         display: block
         text-align: center
