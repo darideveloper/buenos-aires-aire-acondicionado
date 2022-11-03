@@ -315,6 +315,10 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #hero .splide__slide .title {
   font-size: 5vw;
@@ -325,17 +329,19 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 0;
 }
 #hero .splide__slide .title span {
   display: inline-block;
 }
 #hero .splide__slide .logo {
-  width: 200px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-left: 50px;
+  order: -1;
+  margin-top: -70px;
 }
 #hero .splide__slide .logo img {
   width: 180px;

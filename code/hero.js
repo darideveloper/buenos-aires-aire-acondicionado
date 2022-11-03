@@ -25,7 +25,7 @@ export function mount_splide_hero () {
             
             // Get bg image
             const image_num = index + 1
-            const image_file = `url(./imgs/gallery-${image_num}.jpg)`
+            const image_file = `url(./imgs/gallery-${image_num}.png)`
     
             // set background image
             slide.style.backgroundImage = image_file
