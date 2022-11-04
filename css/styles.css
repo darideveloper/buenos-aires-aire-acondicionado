@@ -727,12 +727,12 @@ h2 {
 .cards-page {
   margin: 100px auto;
 }
-.cards-page h2, .cards-page h3 {
-  text-align: left;
-  color: #029395;
-}
 .cards-page .card-page {
   margin-top: 50px;
+}
+.cards-page .card-page h2, .cards-page .card-page h3 {
+  text-align: left;
+  color: #029395;
 }
 .cards-page .card-page .splide .splide__slide {
   padding: 0 60px;
@@ -750,6 +750,7 @@ h2 {
 }
 .cards-page .card-page .splide .splide__slide ul {
   padding-left: 0;
+  margin-bottom: 18px;
 }
 .cards-page .card-page .splide .splide__slide ul li::marker {
   color: #029395;
@@ -766,6 +767,18 @@ h2 {
     width: 100%;
     margin: 0;
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cards-page .card-page {
+    margin-top: 80px;
+  }
+  .cards-page .card-page h2, .cards-page .card-page h3, .cards-page .card-page p {
+    text-align: center;
+  }
+  .cards-page .card-page .splide .splide__slide .btn.cta {
+    margin: 0 auto;
+    display: table;
   }
 }
 
@@ -867,12 +880,28 @@ main.tech .hero {
   justify-content: space-between;
 }
 main.tech .hero h1 {
-  font-size: 50px;
+  font-size: 4vw;
   color: #0268ad;
   width: 30%;
 }
 main.tech .hero img {
   width: 60%;
+}
+@media screen and (max-width: 600px) {
+  main.tech .hero {
+    flex-direction: column;
+    height: auto;
+  }
+  main.tech .hero h1 {
+    font-size: 6vw;
+    width: 100%;
+    text-align: center;
+  }
+  main.tech .hero img {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 
 #footer {

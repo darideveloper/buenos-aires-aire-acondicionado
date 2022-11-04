@@ -13,9 +13,24 @@ main.tech
         justify-content: space-between
 
         h1
-            font-size: 50px
+            font-size: 4vw
             color: $color-b
             width: 30%
 
         img
             width: 60%
+
+    @media screen and (max-width: 600px)
+        .hero
+            flex-direction: column
+            height: auto
+
+            h1
+                font-size: 6vw
+                width: 100%
+                text-align: center
+
+            img
+                width: 80%
+                margin: 0 auto
+                margin-top: 20px
