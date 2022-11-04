@@ -741,7 +741,7 @@ h2 {
   text-align: justify;
 }
 .cards-page .card-page .splide .splide__slide img {
-  width: 500px;
+  width: 50%;
   margin-right: 50px;
 }
 .cards-page .card-page .splide .splide__slide .btn.cta {
@@ -757,6 +757,16 @@ h2 {
   color: #0268ad;
   font-weight: bold;
 }
+@media screen and (max-width: 850px) {
+  .cards-page .card-page .splide .splide__slide {
+    flex-direction: column;
+  }
+  .cards-page .card-page .splide .splide__slide img {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
 
 main.solutions .hero {
   height: 50vw;
@@ -766,12 +776,17 @@ main.solutions .hero {
   background: url("../imgs/solutions/hero.png");
 }
 main.solutions .hero h1 {
-  font-size: 50px;
+  font-size: 4vw;
   text-align: center;
   width: 100%;
   background-color: rgba(2, 104, 173, 0.8);
   color: #ffffff;
-  margin-bottom: 100px;
+  margin-bottom: 10vw;
+}
+@media screen and (max-width: 650px) {
+  main.solutions .hero h1 {
+    font-size: 6vw;
+  }
 }
 
 main.about h2 {

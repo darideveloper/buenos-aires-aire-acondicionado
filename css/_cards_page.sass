@@ -19,7 +19,7 @@
 
 
                 img
-                    width: 500px
+                    width: 50%
                     margin-right: 50px
 
                 .btn.cta
@@ -36,3 +36,16 @@
                 b.blue, span
                     color: $color-b
                     font-weight: bold
+
+    @media screen and (max-width: 850px)
+        .card-page
+            .splide
+                .splide__slide
+                    flex-direction: column
+
+                    img
+                        width: 100%
+                        margin: 0
+                        margin-bottom: 30px
+
+                    
