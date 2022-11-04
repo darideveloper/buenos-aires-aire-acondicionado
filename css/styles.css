@@ -539,6 +539,7 @@ h2 {
 @media screen and (max-width: 500px) {
   #about .icons-img-wrapper .icons .icon, #about .icons-img-wrapper img .icon {
     justify-content: flex-start;
+    margin-top: 30px;
   }
 }
 
@@ -802,7 +803,7 @@ main.about .hero {
   justify-content: space-between;
 }
 main.about .hero h1 {
-  font-size: 50px;
+  font-size: 4vw;
   color: #0268ad;
   width: 40%;
 }
@@ -822,6 +823,35 @@ main.about .priority .icons-cards .card {
 main.about .priority .icons-cards .card img {
   width: 80px;
   margin-right: 30px;
+}
+@media screen and (max-width: 900px) {
+  main.about .priority .icons-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main.about .priority .icons-cards .card {
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  main.about .hero {
+    flex-direction: column;
+    height: auto;
+  }
+  main.about .hero h1 {
+    font-size: 6vw;
+    width: 100%;
+    text-align: center;
+  }
+  main.about .hero img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  main.about .priority .icons-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 main.tech h2 {
