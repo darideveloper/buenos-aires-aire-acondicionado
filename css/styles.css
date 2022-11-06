@@ -321,7 +321,7 @@ h2 {
   align-items: center;
 }
 #hero .splide__slide .title {
-  font-size: 5vw;
+  font-size: 3vw;
   padding: 2%;
   text-align: center;
   color: #ffffff;
@@ -348,13 +348,15 @@ h2 {
 }
 #hero .splide__slide .btn-wrapper {
   position: absolute;
-  bottom: 100px;
+  bottom: 60px;
   left: 0;
   width: 100%;
 }
 #hero .splide__slide .btn-wrapper .btn {
   margin: 0 auto;
   display: table;
+  font-size: 20px;
+  padding: 18px 50px;
 }
 @media screen and (max-width: 700px) {
   #hero .splide__slide {
@@ -363,6 +365,9 @@ h2 {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+  }
+  #hero .splide__slide .title {
+    font-size: 5vw;
   }
   #hero .splide__slide .title, #hero .splide__slide .logo, #hero .splide__slide .btn-wrapper {
     margin: 0;

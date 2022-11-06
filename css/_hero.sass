@@ -26,7 +26,7 @@
         align-items: center
 
         .title
-            font-size: 5vw
+            font-size: 3vw
             padding: 2%
             text-align: center
             color: $color-d
@@ -53,21 +53,27 @@
 
         .btn-wrapper
             position: absolute
-            bottom: 100px
+            bottom: 60px
             left: 0
             width: 100%
 
             .btn
                 margin: 0 auto
                 display: table
+                font-size: 20px
+                padding: 18px 50px
 
     @media screen and (max-width: 700px)
+
         .splide__slide
             height: 80vw
             display: flex
             align-items: center
             justify-content: space-evenly
             flex-direction: column
+
+            .title
+                font-size: 5vw
 
             .title, .logo, .btn-wrapper
                 margin: 0
