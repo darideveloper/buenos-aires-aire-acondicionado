@@ -764,6 +764,7 @@ h2 {
   align-items: center;
   justify-content: center;
   text-align: justify;
+  font-family: "Open Sans", sans-serif;
 }
 .cards-page .card-page .splide .splide__slide img {
   width: 50%;
