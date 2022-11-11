@@ -5,7 +5,7 @@ export function show_alert () {
     if (thanks) {
         
         // Create alert
-        Swal.fire('Thank you.', 'I will answer you as soon as possible')
+        Swal.fire('Gracias.', 'Te escribiremos lo antes posible')
 
         // Redirect
         window.location.href = "#header"
