@@ -69,14 +69,6 @@ Web page with conctact forms, multiple section and pages, and a custom design pr
 
 
 
-
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 ### Built With
 
 <div>
@@ -97,8 +89,6 @@ Web page with conctact forms, multiple section and pages, and a custom design pr
 </a>
 </div>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- ROADMAP -->
 ## Roadmap
 
@@ -112,15 +102,10 @@ Web page with conctact forms, multiple section and pages, and a custom design pr
 - [x] Sliders
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -131,14 +116,11 @@ Dari Developer - darideveloper@gmail.com
 
 Project Link: [https://github.com/DariHernandez/buenos-aires-aire-acondicionado](https://github.com/DariHernandez/buenos-aires-aire-acondicionado)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
+CKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/DariHernandez/buenos-aires-aire-acondicionado.svg?style=for-the-badge
-[license-url]: https://github.com/DariHernandez/buenos-aires-aire-acondicionado/blob/master/LICENSE.txt
+[license-url]: https://github.com/DariHernandez/buenos-aires-aire-acondicionado/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/francisco-dari-hernandez-6456b6181
 [product-screenshot-home]: ./imgs/screenshots/home.png
@@ -149,3 +131,5 @@ Project Link: [https://github.com/DariHernandez/buenos-aires-aire-acondicionado]
 [fiverr-shield]: https://img.shields.io/badge/-fiverr-black.svg?style=for-the-badge&logo=fiverr&colorB=555&logoColor=white
 [gmail-url]: mailto:darideveloper@gmail.com
 [fiverr-url]: https://www.fiverr.com/darideveloper
+
+<span>Last code update: <time datetime="2022-11-10" class="last-update">2022-11-10</time>
