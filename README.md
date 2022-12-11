@@ -117,7 +117,6 @@ Dari Developer - darideveloper@gmail.com
 Project Link: [https://github.com/DariHernandez/buenos-aires-aire-acondicionado](https://github.com/DariHernandez/buenos-aires-aire-acondicionado)
 
 
-CKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/DariHernandez/buenos-aires-aire-acondicionado.svg?style=for-the-badge
 [license-url]: https://github.com/DariHernandez/buenos-aires-aire-acondicionado/blob/master/LICENSE
