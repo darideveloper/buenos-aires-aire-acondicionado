@@ -55,13 +55,13 @@ Web page with contact forms, multiple section and pages, and a custom design pro
 
 # Roadmap
 
-- [x] Desktop\r
-- [x] Mobile\r
-- [x] Animations\r
-- [x] Contact forms\r
-- [x] Client's domain\r
-- [x] Hosting\r
-- [x] Experience gallery\r
+- [x] Desktop
+- [x] Mobile
+- [x] Animations
+- [x] Contact forms
+- [x] Client's domain
+- [x] Hosting
+- [x] Experience gallery
 - [x] Sliders
 
 
